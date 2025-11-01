@@ -197,6 +197,19 @@ export const success = {
   900: "#14532D",
 } as const;
 
+export const pink = {
+  50:  "#fff0f6",
+  100: "#ffe3f0",
+  200: "#ffc2f0",
+  300: "#ff99d9",
+  400: "#ff69b4",
+  500: "#ff3da8",
+  600: "#ff1493",
+  700: "#db0f7e",
+  800: "#b20c68",
+  900: "#7a2948",
+} as const;
+
 /** Alias for danger */
 export const redFeedback = danger;
 /** Alias for warning */
@@ -227,6 +240,7 @@ export const colors = {
   danger,
   warning,
   success,
+  pink,
   info: lightBlue,
 
   red: redFeedback,
