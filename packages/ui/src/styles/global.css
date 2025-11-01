@@ -105,3 +105,176 @@
     @apply shadow-light-3 dark:shadow-dark-3;
   }
 }
+
+/* --- Additional themes via data-theme attribute --- */
+
+/* Make explicit aliases so either .dark or data-theme works */
+html[data-theme="dark"] {
+  --background: theme(colors.grey.850);
+  --foreground: theme(colors.grey.100);
+
+  --card: theme(colors.grey.850);
+  --card-foreground: theme(colors.grey.100);
+
+  --popover: theme(colors.grey.900);
+  --popover-foreground: theme(colors.grey.100);
+
+  --primary: theme(colors.grey.100);
+  --primary-foreground: theme(colors.grey.800);
+
+  --secondary: theme(colors.grey.300);
+  --secondary-foreground: theme(colors.grey.800);
+
+  --tertiary: theme(colors.grey.900);
+  --tertiary-foreground: theme(colors.grey.50);
+
+  --muted: theme(colors.grey.400);
+  --muted-foreground: theme(colors.grey.600);
+
+  --destructive: theme(colors.danger.600);
+  --destructive-foreground: theme(colors.grey.100);
+
+  --border: theme(colors.grey.300);
+  --input: theme(colors.grey.400);
+  --ring: theme(colors.grey.400);
+}
+
+/* Light (explicit) — matches :root */
+html[data-theme="light"] {
+  --background: theme(colors.white);
+  --foreground: theme(colors.grey.850);
+
+  --card: theme(colors.grey.50);
+  --card-foreground: theme(colors.grey.850);
+
+  --popover: theme(colors.grey.50);
+  --popover-foreground: theme(colors.grey.850);
+
+  --primary: theme(colors.black);
+  --primary-foreground: theme(colors.grey.100);
+
+  --secondary: theme(colors.grey.100);
+  --secondary-foreground: theme(colors.grey.900);
+
+  --muted: theme(colors.grey.200);
+  --muted-foreground: theme(colors.grey.300);
+
+  --destructive: theme(colors.danger.600);
+  --destructive-foreground: theme(colors.grey.100);
+
+  --border: theme(colors.grey.400);
+  --input: theme(colors.grey.400);
+  --ring: theme(colors.grey.300);
+}
+
+/* High-contrast (dark) */
+html[data-theme="hc"] {
+  --background: theme(colors.black);
+  --foreground: theme(colors.white);
+
+  --card: theme(colors.black);
+  --card-foreground: theme(colors.white);
+
+  --popover: theme(colors.black);
+  --popover-foreground: theme(colors.white);
+
+  --primary: theme(colors.white);
+  --primary-foreground: theme(colors.black);
+
+  --secondary: theme(colors.white);
+  --secondary-foreground: theme(colors.black);
+
+  --muted: theme(colors.white);
+  --muted-foreground: theme(colors.black);
+
+  --destructive: theme(colors.danger.600);
+  --destructive-foreground: theme(colors.white);
+
+  --border: theme(colors.white);
+  --input: theme(colors.white);
+  --ring: theme(colors.white);
+}
+
+/* Greyscale (light) */
+html[data-theme="gs-light"] {
+  --background: theme(colors.white);
+  --foreground: theme(colors.grey.900);
+
+  --card: theme(colors.grey.50);
+  --card-foreground: theme(colors.grey.900);
+
+  --popover: theme(colors.grey.50);
+  --popover-foreground: theme(colors.grey.900);
+
+  --primary: theme(colors.grey.900);
+  --primary-foreground: theme(colors.white);
+
+  --secondary: theme(colors.grey.200);
+  --secondary-foreground: theme(colors.grey.900);
+
+  --muted: theme(colors.grey.300);
+  --muted-foreground: theme(colors.grey.700);
+
+  --destructive: theme(colors.danger.600);
+  --destructive-foreground: theme(colors.white);
+
+  --border: theme(colors.grey.300);
+  --input: theme(colors.grey.300);
+  --ring: theme(colors.grey.400);
+}
+
+/* Greyscale (dark) */
+html[data-theme="gs-dark"] {
+  --background: theme(colors.grey.850);
+  --foreground: theme(colors.grey.100);
+
+  --card: theme(colors.grey.850);
+  --card-foreground: theme(colors.grey.100);
+
+  --popover: theme(colors.grey.900);
+  --popover-foreground: theme(colors.grey.100);
+
+  --primary: theme(colors.grey.100);
+  --primary-foreground: theme(colors.grey.800);
+
+  --secondary: theme(colors.grey.400);
+  --secondary-foreground: theme(colors.grey.900);
+
+  --muted: theme(colors.grey.500);
+  --muted-foreground: theme(colors.grey.300);
+
+  --destructive: theme(colors.danger.600);
+  --destructive-foreground: theme(colors.grey.100);
+
+  --border: theme(colors.grey.400);
+  --input: theme(colors.grey.400);
+  --ring: theme(colors.grey.400);
+}
+
+/* Barbie mode (because we are kenough) */
+html[data-theme="barbie"] {
+  --background: #fff0f6; /* very light pink */
+  --foreground: #5b0627; /* deep berry text for contrast bc it's cute*/
+
+  --card: #ffe3f0;
+  --card-foreground: #5b0627;
+
+  --popover: #ffe3f0;
+  --popover-foreground: #5b0627;
+
+  --primary: theme(colors.pink.700);
+  --primary-foreground: theme(colors.white);
+
+  --secondary: theme(colors.pink.200);
+  --secondary-foreground: #4a0a24;
+
+  --muted: #ffc2f0;
+  --muted-foreground: #7a2948;
+
+  --destructive: theme(colors.danger.600);
+  --destructive-foreground: theme(colors.white);
+
+  --border: #ffd1e8;
+  --input: #ffd1e8;
+  --ring: theme(colors.pink.500);
+}
